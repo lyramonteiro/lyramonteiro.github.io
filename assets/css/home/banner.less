@@ -1,0 +1,39 @@
+// out: false
+
+.page__hero {
+    position: relative;
+
+    background-image: url('../img/banner-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .background__mask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 600px;
+        z-index: 1;
+
+        background-color: black;
+        opacity: 0.5;
+    }
+
+    .hero__content {
+        position: relative;
+        z-index: 2;
+
+        h1 {
+            font-size: 120px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: white;
+        }
+    }
+}
