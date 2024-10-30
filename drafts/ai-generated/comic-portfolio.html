@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --primary: #FF4B5C;   /* Vermelho comics */
+      --secondary: #2D3B87; /* Azul comics */
+      --accent: #FFD93D;    /* Amarelo comics */
+      --light: #FFFFFF;
+      --dark: #1A1A1A;
+      --panel-bg: #F8F8F8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Bangers', system-ui, sans-serif;
+    }
+
+    body {
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* Estilo de quadrinhos para títulos */
+    .comic-title {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 0 var(--accent);
+      transform: rotate(-2deg);
+    }
+
+    /* Header estilo comics */
+    .header {
+      background-color: var(--primary);
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--light);
+      text-decoration: none;
+      margin-left: 2rem;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: "POW!";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      background: var(--accent);
+      padding: 5px 10px;
+      border-radius: 50%;
+      font-size: 0.8rem;
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover::after {
+      opacity: 1;
+    }
+
+    /* Hero section com estilo de página de quadrinhos */
+    .hero {
+      min-height: 100vh;
+      padding-top: 80px;
+      background-color: var(--light);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero-panel {
+      background: var(--panel-bg);
+      padding: 2rem;
+      border: 3px solid var(--dark);
+      transform: rotate(1deg);
+      position: relative;
+      box-shadow: 5px 5px 0 var(--dark);
+    }
+
+    .hero-panel::before {
+      content: "HELLO!";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      background: var(--accent);
+      padding: 10px 20px;
+      transform: rotate(-5deg);
+      box-shadow: 3px 3px 0 var(--dark);
+    }
+
+    .hero-image {
+      position: relative;
+      min-height: 400px;
+      background: var(--secondary);
+      border: 3px solid var(--dark);
+      transform: rotate(-1deg);
+      box-shadow: 5px 5px 0 var(--dark);
+    }
+
+    /* Seção de projetos em estilo de grid de quadrinhos */
+    .projects {
+      padding: 4rem 2rem;
+      background: var(--light);
+      position: relative;
+    }
+
+    .projects-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: var(--panel-bg);
+      border: 3px solid var(--dark);
+      padding: 1.5rem;
+      transform: rotate(1deg);
+      transition: 0.3s;
+      box-shadow: 5px 5px 0 var(--dark);
+    }
+
+    .project-card:hover {
+      transform: rotate(-1deg) translateY(-5px);
+    }
+
+    .project-image {
+      height: 200px;
+      background: var(--secondary);
+      margin-bottom: 1rem;
+      border: 2px solid var(--dark);
+    }
+
+    /* Seção About com estilo de página dupla de quadrinhos */
+    .about {
+      padding: 4rem 2rem;
+      background: var(--secondary);
+      color: var(--light);
+    }
+
+    .about-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .about-panel {
+      background: var(--panel-bg);
+      color: var(--dark);
+      padding: 1.5rem;
+      border: 3px solid var(--dark);
+      transform: rotate(-1deg);
+      box-shadow: 5px 5px 0 var(--dark);
+    }
+
+    /* Balões de fala e elementos decorativos */
+    .speech-bubble {
+      position: relative;
+      background: var(--light);
+      border-radius: 1rem;
+      padding: 1rem;
+      margin: 1rem 0;
+      border: 3px solid var(--dark);
+    }
+
+    .speech-bubble::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 20px;
+      border: 10px solid transparent;
+      border-top-color: var(--dark);
+    }
+
+    /* Seção de contato estilo comics */
+    .contact {
+      padding: 4rem 2rem;
+      background: var(--primary);
+      color: var(--light);
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: var(--light);
+      padding: 2rem;
+      border: 3px solid var(--dark);
+      transform: rotate(1deg);
+      box-shadow: 5px 5px 0 var(--dark);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 2px solid var(--dark);
+      background: var(--panel-bg);
+    }
+
+    .submit-btn {
+      background: var(--accent);
+      border: 2px solid var(--dark);
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transform: rotate(-2deg);
+      box-shadow: 3px 3px 0 var(--dark);
+    }
+
+    .submit-btn:hover {
+      transform: rotate(0deg) translateY(-2px);
+    }
+
+    /* Footer com estilo comics */
+    footer {
+      background: var(--dark);
+      color: var(--light);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    /* Elementos decorativos de quadrinhos */
+    .pow, .boom, .zap {
+      position: absolute;
+      background: var(--accent);
+      padding: 1rem;
+      border-radius: 50%;
+      transform: rotate(-15deg);
+      font-weight: bold;
+      box-shadow: 3px 3px 0 var(--dark);
+    }
+
+    @media (max-width: 768px) {
+      .hero-content, .about-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="logo comic-title">Dev Hero</div>
+      <div class="nav-links">
+        <a href="#projects">Missões</a>
+        <a href="#about">Origem</a>
+        <a href="#contact">Base</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-panel">
+        <h1 class="comic-title">Frontend Developer Extraordinaire!</h1>
+        <div class="speech-bubble">
+          "Transformando designs em código com superpoderes de HTML, CSS e JavaScript!"
+        </div>
+        <button class="submit-btn">Ver Projetos!</button>
+      </div>
+      <div class="hero-image">
+        <!-- Aqui você poderia adicionar uma ilustração em estilo comic de você programando -->
+      </div>
+    </div>
+    <div class="pow">POW!</div>
+    <div class="boom">BOOM!</div>
+  </section>
+
+  <section class="projects">
+    <h2 class="comic-title">Missões Cumpridas</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image"></div>
+        <h3>Missão: Landing Page</h3>
+        <p>Uma página de aterrissagem super-poderosa!</p>
+      </div>
+      <div class="project-card">
+        <div class="project-image"></div>
+        <h3>Missão: Portfolio</h3>
+        <p>Galeria de façanhas digitais!</p>
+      </div>
+      <div class="project-card">
+        <div class="project-image"></div>
+        <h3>Missão: Site Institucional</h3>
+        <p>Presença web com super estilo!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-content">
+      <div class="about-panel">
+        <h3>Origem</h3>
+        <p>4 anos desenvolvendo superpoderes em HTML, CSS e JavaScript!</p>
+      </div>
+      <div class="about-panel">
+        <h3>Superpoderes</h3>
+        <ul>
+          <li>HTML Masterização</li>
+          <li>CSS Shapeshifting</li>
+          <li>JavaScript Wizardry</li>
+        </ul>
+      </div>
+      <div class="about-panel">
+        <h3>Equipamento</h3>
+        <p>VS Code, Git, e uma xícara infinita de café!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact-form">
+      <h2 class="comic-title">Envie um Sinal!</h2>
+      <div class="speech-bubble">
+        Precisa de uma heroína do frontend? Entre em contato!
+      </div>
+      <input type="text" placeholder="Seu nome">
+      <input type="email" placeholder="Seu email">
+      <textarea placeholder="Sua mensagem" rows="5"></textarea>
+      <button class="submit-btn">Enviar Mensagem!</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Desenvolvido com ❤️ e superpoderes por [Seu Nome]</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+@import 'reset.css';
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.cv__grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 24px;
+
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+
+    .cv__sidebar {
+        background-color: white;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+
+        padding: 24px;
+
+        height: fit-content;
+
+        .subtitle {
+            text-transform: uppercase;
+        }
+
+        .cv__header {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+
+            .cover {
+                width: 100%;
+                height: 200px;
+                border: 1px solid gray;
+                background-color: gray;
+            }
+
+            .name {
+                text-align: center;
+            }
+
+            .job {
+                text-align: center;
+            }
+        }
+
+        .cv__contact {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+
+            .whatsapp {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .location {}
+        }
+
+        .cv__skills {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+
+            .skill__item {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 8px;
+
+                .labels {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .progress {
+                    background-color: gray;
+                    height: 24px;
+
+                    .completion {
+                        display: block;
+                        background-color: green;
+
+                        &.c100 {
+                            width: 100%;
+                        }
+
+                        &.c85 {
+                            width: 85%;
+                        }
+
+                        &.c70 {
+                            width: 70%;
+                        }
+
+                        &.c50 {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cv__contents {
+        background-color: white;
+        padding: 24px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+
+        height: fit-content;
+
+        .cv__about {}
+
+        .cv__experience {
+            .job {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+        }
+
+        .cv__projects {
+
+            .landing__pages,
+            .institutionals,
+            .special {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 8px;
+            }
+        }
+    }
+}
