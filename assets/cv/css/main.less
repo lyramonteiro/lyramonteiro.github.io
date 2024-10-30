@@ -3,13 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
-    background-color: black;
-    font-family: sans-serif;
+    background-color: @bg_body;
+    font-family: 'Open Sans', sans-serif;
+    color: @font_color;
 
     * {
         box-sizing: border-box;
     }
+
+    p {
+        line-height: 1.4;
+        color: @paragraph_color;
+    }
 }
+
+@bg_sidebar: #E3E3E3;
+@sidebar_box: #FF5E5B;
+@bg_contents: #EEEEEE;
+@bg_body: #F4F4F4; // White Smoke
+@font_color: #0D1B1E; // Rich Black
+@paragraph_color: #3C3C3C; // Onyx
 
 .cv__grid {
     display: grid;
@@ -32,7 +45,7 @@ body {
     }
 
     .cv__sidebar {
-        background-color: white;
+        background-color: @bg_sidebar;
 
         display: grid;
         grid-template-columns: 1fr;
@@ -41,6 +54,8 @@ body {
         padding: 24px;
 
         height: fit-content;
+
+        box-shadow: 8px 8px 0 0 @sidebar_box;
 
         .cv__header {
             display: grid;
@@ -85,7 +100,7 @@ body {
             .skill__item {
                 display: grid;
                 grid-template-columns: 1fr;
-                gap: 8px;
+                gap: 6px;
 
                 .labels {
                     display: flex;
@@ -94,27 +109,69 @@ body {
                 }
 
                 .progress {
+                    @height: 18px;
                     background-color: gray;
-                    height: 24px;
+                    height: @height;
 
                     .completion {
                         display: block;
                         background-color: green;
+                        height: @height;
 
                         &.c100 {
-                            width: 100%;
+                            @keyframes progress--100 {
+                                0% {
+                                    width: 0;
+                                }
+
+                                100% {
+                                    width: 100%;
+                                }
+                            }
+
+                            animation: progress--100 1s both;
                         }
 
                         &.c85 {
-                            width: 85%;
+                            @keyframes progress--85 {
+                                0% {
+                                    width: 0;
+                                }
+
+                                100% {
+                                    width: 85%;
+                                }
+                            }
+
+                            animation: progress--85 1s both;
                         }
 
                         &.c70 {
-                            width: 70%;
+                            @keyframes progress--70 {
+                                0% {
+                                    width: 0;
+                                }
+
+                                100% {
+                                    width: 70%;
+                                }
+                            }
+
+                            animation: progress--70 1s both;
                         }
 
                         &.c50 {
-                            width: 50%;
+                            @keyframes progress--50 {
+                                0% {
+                                    width: 0;
+                                }
+
+                                100% {
+                                    width: 50%;
+                                }
+                            }
+
+                            animation: progress--50 1s both;
                         }
                     }
                 }
@@ -123,7 +180,7 @@ body {
     }
 
     .cv__contents {
-        background-color: white;
+        background-color: @bg_contents;
         padding: 24px;
 
         display: grid;
@@ -165,6 +222,42 @@ body {
                 .project {
                     height: 160px;
                     background-color: gray;
+                }
+            }
+
+            .landing__pages {
+                .project {
+                    &:nth-child(1) {
+                        grid-column: span 2;
+                    }
+                }
+            }
+
+            .institutionals {
+                .project {
+                    &:nth-child(2) {
+                        grid-column: span 2;
+                    }
+                }
+            }
+
+            .special {
+                grid-template-rows: 1fr 1fr;
+
+                .project {
+                    &:nth-child(1) {
+                        grid-row: 1 / span 2;
+                        background-color: red;
+                        height: 100%;
+                    }
+
+                    &:nth-child(3) {
+                        grid-column: span 2;
+                    }
+
+                    &:nth-child(4) {
+                        grid-column: span 2;
+                    }
                 }
             }
         }

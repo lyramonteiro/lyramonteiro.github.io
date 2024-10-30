@@ -96,11 +96,16 @@
   src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1y4n.ttf) format('truetype');
 }
 body {
-  background-color: black;
-  font-family: sans-serif;
+  background-color: #F4F4F4;
+  font-family: 'Open Sans', sans-serif;
+  color: #0D1B1E;
 }
 body * {
   box-sizing: border-box;
+}
+body p {
+  line-height: 1.4;
+  color: #3C3C3C;
 }
 .cv__grid {
   display: grid;
@@ -120,12 +125,13 @@ body * {
   font-weight: bold;
 }
 .cv__grid .cv__sidebar {
-  background-color: white;
+  background-color: #E3E3E3;
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
   padding: 24px;
   height: fit-content;
+  box-shadow: 8px 8px 0 0 #FF5E5B;
 }
 .cv__grid .cv__sidebar .cv__header {
   display: grid;
@@ -162,7 +168,7 @@ body * {
 .cv__grid .cv__sidebar .cv__skills .skill__item {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 8px;
+  gap: 6px;
 }
 .cv__grid .cv__sidebar .cv__skills .skill__item .labels {
   display: flex;
@@ -171,26 +177,59 @@ body * {
 }
 .cv__grid .cv__sidebar .cv__skills .skill__item .progress {
   background-color: gray;
-  height: 24px;
+  height: 18px;
 }
 .cv__grid .cv__sidebar .cv__skills .skill__item .progress .completion {
   display: block;
   background-color: green;
+  height: 18px;
 }
 .cv__grid .cv__sidebar .cv__skills .skill__item .progress .completion.c100 {
-  width: 100%;
+  animation: progress--100 1s both;
+}
+@keyframes progress--100 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .cv__grid .cv__sidebar .cv__skills .skill__item .progress .completion.c85 {
-  width: 85%;
+  animation: progress--85 1s both;
+}
+@keyframes progress--85 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
 }
 .cv__grid .cv__sidebar .cv__skills .skill__item .progress .completion.c70 {
-  width: 70%;
+  animation: progress--70 1s both;
+}
+@keyframes progress--70 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
 }
 .cv__grid .cv__sidebar .cv__skills .skill__item .progress .completion.c50 {
-  width: 50%;
+  animation: progress--50 1s both;
+}
+@keyframes progress--50 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
 }
 .cv__grid .cv__contents {
-  background-color: white;
+  background-color: #EEEEEE;
   padding: 24px;
   display: grid;
   grid-template-columns: 1fr;
@@ -229,4 +268,24 @@ body * {
 .cv__grid .cv__contents .cv__projects .special .project {
   height: 160px;
   background-color: gray;
+}
+.cv__grid .cv__contents .cv__projects .landing__pages .project:nth-child(1) {
+  grid-column: span 2;
+}
+.cv__grid .cv__contents .cv__projects .institutionals .project:nth-child(2) {
+  grid-column: span 2;
+}
+.cv__grid .cv__contents .cv__projects .special {
+  grid-template-rows: 1fr 1fr;
+}
+.cv__grid .cv__contents .cv__projects .special .project:nth-child(1) {
+  grid-row: 1 / span 2;
+  background-color: red;
+  height: 100%;
+}
+.cv__grid .cv__contents .cv__projects .special .project:nth-child(3) {
+  grid-column: span 2;
+}
+.cv__grid .cv__contents .cv__projects .special .project:nth-child(4) {
+  grid-column: span 2;
 }
