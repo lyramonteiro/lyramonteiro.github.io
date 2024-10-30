@@ -1,11 +1,110 @@
 @import 'reset.css';
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk_RkaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1y4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1y4n.ttf) format('truetype');
+}
 body {
   background-color: black;
   font-family: sans-serif;
 }
+body * {
+  box-sizing: border-box;
+}
 .cv__grid {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 240px 1fr;
   grid-gap: 24px;
   max-width: 900px;
   margin-left: auto;
@@ -15,6 +114,11 @@ body {
   padding-right: 24px;
   padding-bottom: 24px;
 }
+.cv__grid .subtitle {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+}
 .cv__grid .cv__sidebar {
   background-color: white;
   display: grid;
@@ -22,9 +126,6 @@ body {
   gap: 24px;
   padding: 24px;
   height: fit-content;
-}
-.cv__grid .cv__sidebar .subtitle {
-  text-transform: uppercase;
 }
 .cv__grid .cv__sidebar .cv__header {
   display: grid;
@@ -93,13 +194,28 @@ body {
   padding: 24px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 24px;
+  gap: 24px;
   height: fit-content;
+}
+.cv__grid .cv__contents .cv__about {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.cv__grid .cv__contents .cv__experience {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
 .cv__grid .cv__contents .cv__experience .job {
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
+}
+.cv__grid .cv__contents .cv__projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
 .cv__grid .cv__contents .cv__projects .landing__pages,
 .cv__grid .cv__contents .cv__projects .institutionals,
@@ -107,4 +223,10 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 8px;
+}
+.cv__grid .cv__contents .cv__projects .landing__pages .project,
+.cv__grid .cv__contents .cv__projects .institutionals .project,
+.cv__grid .cv__contents .cv__projects .special .project {
+  height: 160px;
+  background-color: gray;
 }
