@@ -903,19 +903,19 @@ body a {
 }
 .home__header {
   box-shadow: 0 4px 40px 0 rgba(27, 26, 33, 0.1);
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 64px;
   width: 100%;
-  max-width: 900px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 46px;
+  margin-top: 53px;
   border-radius: 5px;
   background-color: white;
   position: absolute;
@@ -946,16 +946,57 @@ body a {
   padding-left: 15%;
 }
 .home__hero .contents .brand {
-  font-size: 46px;
+  width: fit-content;
+  font-size: 56px;
   font-weight: 900;
   padding-bottom: 8px;
   color: #161C57;
+  margin-left: -2px;
+}
+.home__hero .contents .brand .hidden__letter {
+  display: none;
+}
+.home__hero .contents .brand .name {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 6px;
+  transition: all 0.3s ease;
+}
+.home__hero .contents .brand .surname {
+  display: inline-block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 6px;
+  padding-left: 6px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  position: relative;
+}
+.home__hero .contents .brand:hover .hidden__letter {
+  display: inline;
+}
+.home__hero .contents .brand:hover .surname {
+  color: #E9A6CE;
+  background-color: #161C57;
 }
 .home__hero .contents .tagline {
   font-size: 24px;
   font-weight: 600;
   padding-bottom: 12px;
   color: #1B1A21;
+  animation: effect--tagline 2s infinite;
+  transition: all linear 0.35s;
+}
+@keyframes effect--tagline {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .home__hero .contents .text {
   font-size: 16px;

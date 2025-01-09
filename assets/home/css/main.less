@@ -9,6 +9,7 @@
 @raisinblack: #1B1A21;
 @black: #000000;
 @transition: all 0.3s ease;
+@r: 5px;
 
 body {
     font-family: @font;
@@ -21,23 +22,23 @@ body {
 .home__header {
     box-shadow: 0 4px 40px 0 rgba(27, 26, 33, .1);
 
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     padding-left: 24px;
     padding-right: 24px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 64px;
 
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 46px;
+    margin-top: 53px;
 
-    border-radius: 5px;
+    border-radius: @r;
     background-color: white;
 
     position: absolute;
@@ -72,10 +73,45 @@ body {
         padding-left: 15%;
 
         .brand {
-            font-size: 46px;
+            width: fit-content;
+            font-size: 56px;
             font-weight: 900;
             padding-bottom: 8px;
             color: @pennblue;
+            margin-left: -2px;
+
+            .hidden__letter {
+                display: none;
+            }
+
+            .name {
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-right: 6px;
+                transition: @transition;
+            }
+
+            .surname {
+                display: inline-block;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-right: 6px;
+                padding-left: 6px;
+                transition: @transition;
+                border-radius: @r;
+                position: relative;
+            }
+
+            &:hover {
+                .hidden__letter {
+                    display: inline;
+                }
+
+                .surname {
+                    color: #E9A6CE;
+                    background-color: @pennblue;
+                }
+            }
         }
 
         .tagline {
@@ -83,6 +119,23 @@ body {
             font-weight: 600;
             padding-bottom: 12px;
             color: @raisinblack;
+
+            animation: effect--tagline 2s infinite;
+            transition: all linear .35s;
+
+            @keyframes effect--tagline {
+                0% {
+                    opacity: 0;
+                }
+
+                30% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
         }
 
         .text {
