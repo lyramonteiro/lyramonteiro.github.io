@@ -1,0 +1,90 @@
+// out: false
+
+body {
+    background-color: #161616;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+main {
+    padding-top: 120px;
+    padding-left: 163px;
+}
+
+.remote {
+    width: 273px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #F0F0F0;
+
+    margin-bottom: 60px;
+
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+
+    .text {
+        width: 218px;
+        line-height: 20px;
+        font-size: 14px;
+        color: #F0F0F0;
+    }
+}
+
+.hero {
+    .name {
+        margin-bottom: 13px;
+        font-size: 24px;
+        color: #F0F0F0;
+    }
+
+    .role {
+        line-height: 100px;
+        font-size: 80px;
+        color: #F0F0F0;
+
+        span {
+            color: #DEE55B;
+        }
+    }
+
+    .description {
+        margin-bottom: 46px;
+        line-height: 28px;
+        font-size: 20px;
+        color: #F0F0F0;
+    }
+
+    .button {
+        position: relative;
+        padding: 16px 28px;
+        border-radius: 4px;
+        background-color: #DEE55B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        border: 1px solid transparent;
+
+        font-size: 16px;
+        color: #161616;
+
+        .transition();
+
+        .decoration {
+            position: absolute;
+            top: -20px;
+            right: -19px;
+            transform-origin: center;
+            animation: effect--star 4s infinite;
+        }
+
+        &:hover {
+            background-color: transparent;
+            border-color: #DEE55B;
+            color: #DEE55B;
+
+            img {
+                filter: brightness(0) saturate(100%) invert(92%) sepia(37%) saturate(670%) hue-rotate(3deg) brightness(90%) contrast(101%);
+            }
+        }
+    }
+}

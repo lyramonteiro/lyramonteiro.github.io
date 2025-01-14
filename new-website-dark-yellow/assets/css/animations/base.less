@@ -1,0 +1,28 @@
+// out: false
+
+.transition(@t: 0.25s) {
+    transition: all @t ease;
+}
+
+.scale(@s: 1.05) {
+    transform: scale(@s);
+    transform-origin: center;
+}
+
+.slide() {
+    transform: translateX(10px);
+}
+
+@keyframes effect--star {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-4px) translateX(2px) scale(1.2);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+}
