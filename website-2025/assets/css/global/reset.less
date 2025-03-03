@@ -1,0 +1,129 @@
+// out: false
+// without Bootstrap
+// att.: 02/03/2024, Lyra Monteiro
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: normal;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+iframe {
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-style: normal;
+    line-height: 1;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+button {
+    border: 0;
+    appearance: none;
+    text-align: initial;
+    background-color: transparent;
+    padding-block: 0;
+    padding-inline: 0;
+}
+
+dialog {
+    border: none;
+}
+
+fieldset {
+    border: none;
+    display: block;
+}
+
+iframe {
+    border: none;
+}
+
+img {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 0;
+}
+
+mark {
+    padding: 0;
+    background-color: transparent;
+}
+
+menu {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+summary {
+    list-style: none;
+}
+
+time {
+    display: block;
+}
+
+// ? Browser related
+input:-internal-autofill-selected {
+    color: initial;
+}
+
+// ! FALLBACK older browsers
+section,
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+footer,
+menu,
+nav {
+    display: block;
+}
