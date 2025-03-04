@@ -1,0 +1,36 @@
+// out: false
+
+.home__links {
+    padding-top: 187px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    min-width: 360px;
+    flex-shrink: 0;
+
+    a {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        color: @dark_gunmetal;
+        font-family: @fsc;
+        font-size: 32px;
+        font-weight: 300;
+        letter-spacing: 1.92px;
+        .transition();
+
+        img {
+            .transition();
+        }
+
+        &:hover {
+            font-weight: 700;
+
+            img {
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

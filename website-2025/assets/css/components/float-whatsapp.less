@@ -2,8 +2,8 @@
 
 .float__whatsapp {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 16px;
+    right: 16px;
     background-color: @marengo;
     .r();
     display: flex;
@@ -11,8 +11,75 @@
     align-items: center;
     width: 70px;
     height: 70px;
+    .transition();
+
+    .detail__top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        .transition();
+    }
+
+    .detail__bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        .transition();
+    }
 
     .icon {
         position: relative;
+
+        .is--hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            .transition();
+        }
+    }
+
+    .attention {
+        position: absolute;
+        top: 6px;
+        right: 21px;
+        display: block;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .r();
+        opacity: 0;
+        background-color: @imperial_red;
+        color: @ghost_white;
+        font-family: @fr;
+        font-size: 12px;
+        font-weight: 400;
+        .transition();
+    }
+
+    &:hover {
+        width: 100px;
+        background-color: @ghost_white;
+        box-shadow: 4px 4px 12px 0px rgba(33, 37, 41, 0.40);
+
+        .icon {
+            .is--hover {
+                opacity: 1;
+            }
+        }
+
+        .detail__top,
+        .detail__bottom,
+        .attention {
+            opacity: 1;
+        }
+
+        .attention {
+            top: -8px;
+        }
     }
 }

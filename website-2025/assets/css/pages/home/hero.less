@@ -3,47 +3,49 @@
 .home__hero {
     max-width: 651px;
 
-    .logo {
-        margin-bottom: 16px;
-    }
-
-    .title {
-        color: @dark_gunmetal;
-        font-family: @fsec;
-        font-size: 140px;
-        font-weight: 300;
-        text-transform: uppercase;
-    }
-
     @adjust_with_title: 7px;
 
-    .subtitle {
-        margin-top: -7px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding-left: @adjust_with_title;
-
-        .line--1 {
-            height: 1px;
-            width: 60px;
-            background-color: @dark_gunmetal;
+    .brand {
+        .logo {
+            margin-bottom: 16px;
         }
 
-        .line--2 {
-            height: 1px;
-            width: 120px;
-            flex-grow: 1;
-            background-color: @dark_gunmetal;
-        }
-
-        .text {
+        .title {
             color: @dark_gunmetal;
             font-family: @fsec;
-            font-size: 70px;
-            font-weight: 250;
-            letter-spacing: 7px;
+            font-size: 140px;
+            font-weight: 300;
             text-transform: uppercase;
+        }
+
+        .subtitle {
+            margin-top: -7px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-left: @adjust_with_title;
+
+            .line--1 {
+                height: 0.5px;
+                width: 60px;
+                background-color: @dark_gunmetal;
+            }
+
+            .line--2 {
+                height: 0.5px;
+                width: 110px;
+                flex-grow: 1;
+                background-color: @dark_gunmetal;
+            }
+
+            .text {
+                color: @dark_gunmetal;
+                font-family: @fsec;
+                font-size: 70px;
+                font-weight: 250;
+                letter-spacing: 7px;
+                text-transform: uppercase;
+            }
         }
     }
 

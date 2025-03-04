@@ -471,8 +471,8 @@ nav {
 }
 .float__whatsapp {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 16px;
+  right: 16px;
   background-color: #495057;
   border-radius: 2px;
   display: flex;
@@ -480,9 +480,66 @@ nav {
   align-items: center;
   width: 70px;
   height: 70px;
+  transition: all 0.25s linear;
+}
+.float__whatsapp .detail__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.25s linear;
+}
+.float__whatsapp .detail__bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.25s linear;
 }
 .float__whatsapp .icon {
   position: relative;
+}
+.float__whatsapp .icon .is--hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.25s linear;
+}
+.float__whatsapp .attention {
+  position: absolute;
+  top: 6px;
+  right: 21px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  opacity: 0;
+  background-color: #ED3638;
+  color: #F8F9FA;
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  transition: all 0.25s linear;
+}
+.float__whatsapp:hover {
+  width: 100px;
+  background-color: #F8F9FA;
+  box-shadow: 4px 4px 12px 0px rgba(33, 37, 41, 0.4);
+}
+.float__whatsapp:hover .icon .is--hover {
+  opacity: 1;
+}
+.float__whatsapp:hover .detail__top,
+.float__whatsapp:hover .detail__bottom,
+.float__whatsapp:hover .attention {
+  opacity: 1;
+}
+.float__whatsapp:hover .attention {
+  top: -8px;
 }
 .lyramonteiro__header {
   position: relative;
@@ -501,8 +558,58 @@ nav {
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lyramonteiro__header .wrapper .actions {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.lyramonteiro__header .wrapper .social {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.lyramonteiro__header .wrapper .social a {
+  opacity: 0.4;
+  transition: all 0.25s linear;
+}
+.lyramonteiro__header .wrapper .social a:hover {
+  opacity: 1;
+}
+.lyramonteiro__header .wrapper .button {
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 12px;
+  transition: all 0.25s linear;
+  background-color: #212529;
+  padding: 14px 32px;
+  border-radius: 2px;
+  color: #F8F9FA;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1.08px;
+}
+.lyramonteiro__header .wrapper .button .icon {
+  position: relative;
+}
+.lyramonteiro__header .wrapper .button .icon .is--hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.25s linear;
+}
+.lyramonteiro__header .wrapper .button:hover {
+  color: #212529;
+  background-color: #F8F9FA;
+  box-shadow: 4px 4px 12px 0px rgba(73, 80, 87, 0.12);
+}
+.lyramonteiro__header .wrapper .button:hover .icon .is--hover {
+  opacity: 1;
 }
 .lyramonteiro__footer {
   position: absolute;
@@ -520,11 +627,11 @@ nav {
 .page__home {
   position: relative;
   width: 100%;
-  height: 961px;
+  height: 780px;
   background-image: url('../img/home-background-desktop.png');
   background-size: cover;
   background-color: #F8F9FA;
-  padding-top: 71px;
+  padding-top: 46px;
   padding-left: 11.5%;
   padding-right: 9.5%;
   display: flex;
@@ -533,35 +640,35 @@ nav {
 .home__hero {
   max-width: 651px;
 }
-.home__hero .logo {
+.home__hero .brand .logo {
   margin-bottom: 16px;
 }
-.home__hero .title {
+.home__hero .brand .title {
   color: #212529;
   font-family: 'Saira Extra Condensed', sans-serif;
   font-size: 140px;
   font-weight: 300;
   text-transform: uppercase;
 }
-.home__hero .subtitle {
+.home__hero .brand .subtitle {
   margin-top: -7px;
   display: flex;
   align-items: center;
   gap: 12px;
   padding-left: 7px;
 }
-.home__hero .subtitle .line--1 {
-  height: 1px;
+.home__hero .brand .subtitle .line--1 {
+  height: 0.5px;
   width: 60px;
   background-color: #212529;
 }
-.home__hero .subtitle .line--2 {
-  height: 1px;
-  width: 120px;
+.home__hero .brand .subtitle .line--2 {
+  height: 0.5px;
+  width: 110px;
   flex-grow: 1;
   background-color: #212529;
 }
-.home__hero .subtitle .text {
+.home__hero .brand .subtitle .text {
   color: #212529;
   font-family: 'Saira Extra Condensed', sans-serif;
   font-size: 70px;
@@ -616,4 +723,32 @@ nav {
 }
 .home__hero .button:hover .icon .is--hover {
   opacity: 1;
+}
+.home__links {
+  padding-top: 187px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-width: 360px;
+  flex-shrink: 0;
+}
+.home__links a {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  color: #212529;
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 1.92px;
+  transition: all 0.25s linear;
+}
+.home__links a img {
+  transition: all 0.25s linear;
+}
+.home__links a:hover {
+  font-weight: 700;
+}
+.home__links a:hover img {
+  transform: rotate(45deg);
 }
