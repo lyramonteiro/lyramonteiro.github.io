@@ -1,0 +1,113 @@
+// out: false
+
+.home__hero {
+    max-width: 651px;
+
+    @adjust_with_title: 7px;
+
+    .brand {
+        .logo {
+            margin-bottom: 16px;
+        }
+
+        .title {
+            color: @dark_gunmetal;
+            font-family: @fsec;
+            font-size: 140px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            margin-top: -7px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-left: @adjust_with_title;
+
+            .line--1 {
+                height: 0.5px;
+                width: 60px;
+                background-color: @dark_gunmetal;
+            }
+
+            .line--2 {
+                height: 0.5px;
+                width: 110px;
+                flex-grow: 1;
+                background-color: @dark_gunmetal;
+            }
+
+            .text {
+                color: @dark_gunmetal;
+                font-family: @fsec;
+                font-size: 70px;
+                font-weight: 250;
+                letter-spacing: 7px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .description {
+        margin-top: 30px;
+        margin-bottom: 32px;
+
+        padding-left: @adjust_with_title;
+
+        color: @nickel;
+        font-family: @fr;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 1.08px;
+
+        strong {
+            font-weight: 600;
+        }
+    }
+
+    .button {
+        margin-left: @adjust_with_title;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        .transition();
+
+        background-color: @onyx;
+        padding: 14px 32px;
+        .r();
+
+        color: @ghost_white;
+        font-family: @fr;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1.08px;
+
+        .icon {
+            position: relative;
+
+            .is--hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                .transition();
+            }
+        }
+
+        &:hover {
+            color: @dark_gunmetal;
+            background-color: @ghost_white;
+            box-shadow: 4px 4px 12px 0px rgba(73, 80, 87, 0.12);
+
+            .icon {
+                .is--hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

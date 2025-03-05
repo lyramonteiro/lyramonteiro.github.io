@@ -4,47 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyra Monteiro</title>
+    <title>Lyra Monteiro | Web Dev</title>
 
-    <!-- * Stylesheets -->
-    <link rel="stylesheet" href="assets/home/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
-    <!-- * Scripts -->
-    <script src="assets/js/cycle-words.js" defer></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 </head>
 
 <body>
-    <header class="home__header">
-        <a href="#home">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#skills">Skills</a>
-        <a href="#projetos">Portfolio</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+    <header class="lyramonteiro__header">
+        <div class="wrapper">
+            <a href="index.html">
+                <h1>
+                    <img src="assets/img/lyra-monteiro-header-logo.svg"
+                        alt="Logotipo estilizado com quadrado e linhas e as iniciais LMWD significando Lyra Monteiro Web Developer.">
+                </h1>
+            </a>
+
+            <div class="actions">
+                <div class="social">
+                    <a href="https://www.instagram.com/lyra.webdev/">
+                        <img src="assets/img/social/mdi_instagram.svg" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/lyramonteiro/">
+                        <img src="assets/img/social/mdi_linkedin.svg" alt="">
+                    </a>
+                    <a href="https://www.threads.net/@lyra.webdev">
+                        <img src="assets/img/social/hugeicons_threads.svg" alt="">
+                    </a>
+                    <a href="https://github.com/lyramonteiro">
+                        <img src="assets/img/social/mdi_github.svg" alt="">
+                    </a>
+                </div>
+                <a href="https://wa.me/5551989112346" class="button">
+                    <div class="icon">
+                        <img src="assets/img/hero-icon-whatsapp-default.svg" alt="">
+                        <img src="assets/img/hero-icon-whatsapp-hover.svg" alt="" class="is--hover">
+                    </div>
+                    Entre em contato
+                </a>
+            </div>
+        </div>
     </header>
 
-    <section class="home__hero">
-        <div class="contents">
-            <h1 class="brand">
-                <span class="name">Lyra </span>
-                <span class="surname">
-                    <span class="hidden__letter">F.</span>
-                    Monteiro
-                </span>
-            </h1>
-            <p class="tagline" id="js--cycle-word">Desenvolvedora Front-End</p>
-            <p class="text">Especialista em websites responsivos com
-                <br> foco na experiência do usuário.
+    <main class="page__home">
+        <section class="home__hero">
+            <div class="brand">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="assets/img/lyra-monteiro-logo-hero-mobile.svg">
+                    <img src="assets/img/lyra-monteiro-logo-hero-desktop.svg"
+                        alt="Logotipo estilizado com quadrado e linhas." class="logo">
+                </picture>
+                <h2 class="title">
+                    Lyra Monteiro
+                </h2>
+                <div class="subtitle">
+                    <span class="line--1"></span>
+                    <p class="text">Web Dev & UX</p>
+                    <span class="line--2"></span>
+                </div>
+            </div>
+
+            <p class="description">
+                Websites com código bem estruturado, design estratégico e experiência do usuário alinhados para criar
+                interfaces que fazem <strong>sentido para o seu negócio.</strong>
             </p>
-            <a href="#" class="button">
-                <img src="assets/home/img/hero-whatsapp.svg" alt="">
-                Entre em contato
+
+            <a href="https://wa.me/5551989112346" class="button">
+                <div class="icon">
+                    <img src="assets/img/hero-icon-whatsapp-default.svg" alt="">
+                    <img src="assets/img/hero-icon-whatsapp-hover.svg" alt="" class="is--hover">
+                </div>
+                Arquitetar seu website
             </a>
+        </section>
+
+        <section class="home__links">
+            <a href="portfolio.html">
+                <img src="assets/img/arrow-outward.svg" alt="">
+                Portfólio
+            </a>
+            <a href="servicos.html">
+                <img src="assets/img/arrow-outward.svg" alt="">
+                Serviços
+            </a>
+            <a href="sobre.html">
+                <img src="assets/img/arrow-outward.svg" alt="">
+                Sobre
+            </a>
+            <a href="parceria-para-agencias.html">
+                <img src="assets/img/arrow-outward.svg" alt="">
+                Parceria para Agências
+            </a>
+            <a href="depoimentos.html">
+                <img src="assets/img/arrow-outward.svg" alt="">
+                Depoimentos
+            </a>
+            <a href="contato.html">
+                <img src="assets/img/arrow-outward.svg" alt="">
+                Contato
+            </a>
+        </section>
+
+        <footer class="lyramonteiro__footer">
+            <p class="attribution">Lyra Monteiro. 2025. Todos os direitos reservados.</p>
+        </footer>
+    </main>
+
+    <a href="https://wa.me/5551989112346" class="float__whatsapp">
+        <div class="icon">
+            <img src="assets/img/float-whatsapp/whatsapp-default.svg" alt="">
+            <img src="assets/img/float-whatsapp/whatsapp-hover.svg" alt="" class="is--hover">
         </div>
-        <a href="#projetos" class="scrolldown">
-            <img src="assets/home/img/hero-scrolldown.svg" alt="">
-        </a>
-    </section>
+
+        <img src="assets/img/float-whatsapp/detail-top.png" alt="" class="detail__top">
+
+        <img src="assets/img/float-whatsapp/detail-bottom.png" alt="" class="detail__bottom">
+
+        <span class="attention">1</span>
+    </a>
 </body>
 
 </html>

@@ -1,0 +1,754 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8sDE0Uw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8tdE0Uw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8tvE0Uw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8uDFEUw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8u6FEUw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8vdFEUw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8v0FEUw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-WYi1UA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4i1UA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-NYi1UA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-1UA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-1UA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-h4-1UA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-ro-1UA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memUYa2wxmKQyNkiV50dulWP7s95AqZTzZHcVdxWI9WH-pKBSooxkw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: italic;
+  font-weight: 200;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memUYa2wxmKQyNkiV50dulWP7s95AqZTzZHcVdxWI9WH-pKByosxkw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memUYa2wxmKQyNkiV50dulWP7s95AqZTzZHcVdxWI9WH-pKBFIsxkw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memUYa2wxmKQyNkiV50dulWP7s95AqZTzZHcVdxWI9WH-pKBSosxkw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memUYa2wxmKQyNkiV50dulWP7s95AqZTzZHcVdxWI9WH-pKBeIsxkw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memUYa2wxmKQyNkiV50dulWP7s95AqZTzZHcVdxWI9WH-pKBlIwxkw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memUYa2wxmKQyNkiV50dulWP7s95AqZTzZHcVdxWI9WH-pKBrYwxkw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: italic;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memUYa2wxmKQyNkiV50dulWP7s95AqZTzZHcVdxWI9WH-pKByowxkw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memUYa2wxmKQyNkiV50dulWP7s95AqZTzZHcVdxWI9WH-pKB44wxkw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA71rDosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA79rCosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA7wTCosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA71rCosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA72jCosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA74TFosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA773Fosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA79rFosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v20/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA7_PFosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairacondensed/v11/EJRMQgErUN8XuHNEtX81i9TmEkrnwetA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairacondensed/v11/EJRLQgErUN8XuHNEtX81i9TmEkrnbcpg8A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairacondensed/v11/EJRLQgErUN8XuHNEtX81i9TmEkrnCclg8A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairacondensed/v11/EJROQgErUN8XuHNEtX81i9TmEkrfpQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairacondensed/v11/EJRLQgErUN8XuHNEtX81i9TmEkrnUchg8A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairacondensed/v11/EJRLQgErUN8XuHNEtX81i9TmEkrnfc9g8A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairacondensed/v11/EJRLQgErUN8XuHNEtX81i9TmEkrnGc5g8A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairacondensed/v11/EJRLQgErUN8XuHNEtX81i9TmEkrnBc1g8A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairacondensed/v11/EJRLQgErUN8XuHNEtX81i9TmEkrnIcxg8A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Extra Condensed';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairaextracondensed/v13/-nFsOHYr-vcC7h8MklGBkrvmUG9rbpkisrTri0jx.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Extra Condensed';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairaextracondensed/v13/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrJ2nR3A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Extra Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairaextracondensed/v13/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrQ2rR3A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Extra Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairaextracondensed/v13/-nFiOHYr-vcC7h8MklGBkrvmUG9rbpkisrTT7w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Extra Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairaextracondensed/v13/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrG2vR3A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Extra Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairaextracondensed/v13/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrN2zR3A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Extra Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairaextracondensed/v13/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrU23R3A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Extra Condensed';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairaextracondensed/v13/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrT27R3A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Extra Condensed';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sairaextracondensed/v13/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTra2_R3A.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  line-height: normal;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+iframe {
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  line-height: 1;
+}
+a {
+  display: block;
+  text-decoration: none;
+  width: fit-content;
+}
+a:hover {
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+  margin-bottom: 0;
+}
+button {
+  border: 0;
+  appearance: none;
+  text-align: initial;
+  background-color: transparent;
+  padding-block: 0;
+  padding-inline: 0;
+}
+dialog {
+  border: none;
+}
+fieldset {
+  border: none;
+  display: block;
+}
+iframe {
+  border: none;
+}
+img {
+  display: block;
+}
+label {
+  display: block;
+  margin-bottom: 0;
+}
+mark {
+  padding: 0;
+  background-color: transparent;
+}
+menu {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+summary {
+  list-style: none;
+}
+time {
+  display: block;
+}
+input:-internal-autofill-selected {
+  color: initial;
+}
+section,
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+footer,
+menu,
+nav {
+  display: block;
+}
+.float__whatsapp {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #495057;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  transition: all 0.25s linear;
+}
+.float__whatsapp .detail__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.25s linear;
+}
+.float__whatsapp .detail__bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.25s linear;
+}
+.float__whatsapp .icon {
+  position: relative;
+}
+.float__whatsapp .icon .is--hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.25s linear;
+}
+.float__whatsapp .attention {
+  position: absolute;
+  top: 6px;
+  right: 21px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  opacity: 0;
+  background-color: #ED3638;
+  color: #F8F9FA;
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  transition: all 0.25s linear;
+}
+.float__whatsapp:hover {
+  width: 100px;
+  background-color: #F8F9FA;
+  box-shadow: 4px 4px 12px 0px rgba(33, 37, 41, 0.4);
+}
+.float__whatsapp:hover .icon .is--hover {
+  opacity: 1;
+}
+.float__whatsapp:hover .detail__top,
+.float__whatsapp:hover .detail__bottom,
+.float__whatsapp:hover .attention {
+  opacity: 1;
+}
+.float__whatsapp:hover .attention {
+  top: -8px;
+}
+.lyramonteiro__header {
+  position: relative;
+  z-index: 2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #F8F9FA;
+  box-shadow: 0px 26px 32px rgba(108, 117, 125, 0.06);
+  box-shadow: 0px 26px 32px #F0F1F2;
+}
+.lyramonteiro__header .wrapper {
+  width: 100%;
+  max-width: calc(1296px + 24px * 2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lyramonteiro__header .wrapper .actions {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.lyramonteiro__header .wrapper .social {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.lyramonteiro__header .wrapper .social a {
+  opacity: 0.4;
+  transition: all 0.25s linear;
+}
+.lyramonteiro__header .wrapper .social a:hover {
+  opacity: 1;
+}
+.lyramonteiro__header .wrapper .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.25s linear;
+  background-color: #212529;
+  padding: 14px 32px;
+  border-radius: 2px;
+  color: #F8F9FA;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1.08px;
+}
+.lyramonteiro__header .wrapper .button .icon {
+  position: relative;
+}
+.lyramonteiro__header .wrapper .button .icon .is--hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.25s linear;
+}
+.lyramonteiro__header .wrapper .button:hover {
+  color: #212529;
+  background-color: #F8F9FA;
+  box-shadow: 4px 4px 12px 0px rgba(73, 80, 87, 0.12);
+}
+.lyramonteiro__header .wrapper .button:hover .icon .is--hover {
+  opacity: 1;
+}
+.lyramonteiro__footer {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  color: #212529;
+  text-align: center;
+  font-family: 'Saira', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 0.84px;
+}
+.page__home {
+  position: relative;
+  width: 100%;
+  height: 780px;
+  background-image: url('../img/home-background-desktop.png');
+  background-size: cover;
+  background-color: #F8F9FA;
+  padding-top: 46px;
+  padding-left: 11.5%;
+  padding-right: 9.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.home__hero {
+  max-width: 651px;
+}
+.home__hero .brand .logo {
+  margin-bottom: 16px;
+}
+.home__hero .brand .title {
+  color: #212529;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 140px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.home__hero .brand .subtitle {
+  margin-top: -7px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 7px;
+}
+.home__hero .brand .subtitle .line--1 {
+  height: 0.5px;
+  width: 60px;
+  background-color: #212529;
+}
+.home__hero .brand .subtitle .line--2 {
+  height: 0.5px;
+  width: 110px;
+  flex-grow: 1;
+  background-color: #212529;
+}
+.home__hero .brand .subtitle .text {
+  color: #212529;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 70px;
+  font-weight: 250;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+.home__hero .description {
+  margin-top: 30px;
+  margin-bottom: 32px;
+  padding-left: 7px;
+  color: #6C7278;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1.08px;
+}
+.home__hero .description strong {
+  font-weight: 600;
+}
+.home__hero .button {
+  margin-left: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.25s linear;
+  background-color: #343A40;
+  padding: 14px 32px;
+  border-radius: 2px;
+  color: #F8F9FA;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1.08px;
+}
+.home__hero .button .icon {
+  position: relative;
+}
+.home__hero .button .icon .is--hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.25s linear;
+}
+.home__hero .button:hover {
+  color: #212529;
+  background-color: #F8F9FA;
+  box-shadow: 4px 4px 12px 0px rgba(73, 80, 87, 0.12);
+}
+.home__hero .button:hover .icon .is--hover {
+  opacity: 1;
+}
+.home__links {
+  padding-top: 187px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-width: 360px;
+  flex-shrink: 0;
+}
+.home__links a {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  color: #212529;
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 1.92px;
+  transition: all 0.25s linear;
+}
+.home__links a img {
+  transition: all 0.25s linear;
+}
+.home__links a:hover {
+  font-weight: 700;
+}
+.home__links a:hover img {
+  transform: rotate(45deg);
+}
